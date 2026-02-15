@@ -91,18 +91,32 @@ const Academics = () => {
         <div className="container mx-auto px-4">
           <Tabs defaultValue="lower" className="w-full">
             <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 mb-12">
-              <TabsTrigger value="lower" className="font-heading font-bold">Lower Primary</TabsTrigger>
-              <TabsTrigger value="middle" className="font-heading font-bold">Middle Primary</TabsTrigger>
-              <TabsTrigger value="upper" className="font-heading font-bold">Upper Primary</TabsTrigger>
+              <TabsTrigger value="lower" className="font-heading font-bold">
+                Lower Primary
+              </TabsTrigger>
+              <TabsTrigger value="middle" className="font-heading font-bold">
+                Middle Primary
+              </TabsTrigger>
+              <TabsTrigger value="upper" className="font-heading font-bold">
+                Upper Primary
+              </TabsTrigger>
             </TabsList>
 
             {sections.map((section) => (
-              <TabsContent key={section.id} value={section.id} className="animate-fade-in">
+              <TabsContent
+                key={section.id}
+                value={section.id}
+                className="animate-fade-in"
+              >
                 <div className="max-w-5xl mx-auto">
                   {/* Header */}
                   <div className="text-center mb-12">
-                    <h2 className="font-heading font-extrabold text-3xl text-foreground">{section.title}</h2>
-                    <p className="text-secondary font-heading font-bold text-lg mt-1">{section.grades}</p>
+                    <h2 className="font-heading font-extrabold text-3xl text-foreground">
+                      {section.title}
+                    </h2>
+                    <p className="text-secondary font-heading font-bold text-lg mt-1">
+                      {section.grades}
+                    </p>
                   </div>
 
                   {/* Overview */}
@@ -110,9 +124,13 @@ const Academics = () => {
                     <div>
                       <div className="flex items-center gap-3 mb-4">
                         <BookOpen className="w-6 h-6 text-primary" />
-                        <h3 className="font-heading font-bold text-xl text-foreground">Overview</h3>
+                        <h3 className="font-heading font-bold text-xl text-foreground">
+                          Overview
+                        </h3>
                       </div>
-                      <p className="text-muted-foreground leading-relaxed">{section.overview}</p>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {section.overview}
+                      </p>
                     </div>
                     <div>
                       <img
@@ -127,7 +145,9 @@ const Academics = () => {
                   <div className="bg-card rounded-lg p-8 border border-border shadow-sm mb-12">
                     <div className="flex items-center gap-3 mb-6">
                       <BookOpen className="w-6 h-6 text-primary" />
-                      <h3 className="font-heading font-bold text-xl text-foreground">Curriculum Subjects</h3>
+                      <h3 className="font-heading font-bold text-xl text-foreground">
+                        Curriculum Subjects
+                      </h3>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                       {section.curriculum.map((subject, i) => (
@@ -136,7 +156,9 @@ const Academics = () => {
                           className="flex items-center gap-3 bg-muted rounded-md p-3"
                         >
                           <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                          <span className="text-foreground font-medium text-sm">{subject}</span>
+                          <span className="text-foreground font-medium text-sm">
+                            {subject}
+                          </span>
                         </div>
                       ))}
                     </div>
@@ -146,9 +168,13 @@ const Academics = () => {
                   <div className="bg-primary/5 rounded-lg p-8 border border-primary/20">
                     <div className="flex items-center gap-3 mb-4">
                       <Award className="w-6 h-6 text-secondary" />
-                      <h3 className="font-heading font-bold text-xl text-foreground">Academic Excellence</h3>
+                      <h3 className="font-heading font-bold text-xl text-foreground">
+                        Academic Excellence
+                      </h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">{section.excellence}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {section.excellence}
+                    </p>
                   </div>
                 </div>
               </TabsContent>

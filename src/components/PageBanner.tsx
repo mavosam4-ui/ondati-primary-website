@@ -6,9 +6,7 @@ interface PageBannerProps {
 
 const PageBanner = ({ title, subtitle, backgroundImage }: PageBannerProps) => {
   return (
-    <section
-      className="relative hero-gradient py-20 md:py-28 overflow-hidden"
-    >
+    <section className="relative hero-gradient py-20 md:py-28 overflow-hidden">
       {backgroundImage && (
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"

@@ -5,18 +5,63 @@ import SectionHeading from "@/components/SectionHeading";
 import aerialImage from "@/assets/school-aerial.jpg";
 
 const timelineEvents = [
-  { year: "1990", title: "School Founded", description: "Ondati Primary School was established to serve the local community in Koguta Location." },
-  { year: "1998", title: "First KCPE Candidates", description: "Our first class sat for the Kenya Certificate of Primary Education, achieving commendable results." },
-  { year: "2005", title: "Infrastructure Expansion", description: "New classrooms and a library were constructed to accommodate the growing student population." },
-  { year: "2012", title: "ICT Integration", description: "The school introduced computer literacy programs to prepare students for the digital age." },
-  { year: "2018", title: "Sports Excellence", description: "Students represented Homabay County in national athletics and football competitions." },
-  { year: "2024", title: "Continued Growth", description: "Ondati Primary continues to excel in academics and community development under CBC curriculum." },
+  {
+    year: "1990",
+    title: "School Founded",
+    description:
+      "Ondati Primary School was established to serve the local community in Koguta Location.",
+  },
+  {
+    year: "1998",
+    title: "First KCPE Candidates",
+    description:
+      "Our first class sat for the Kenya Certificate of Primary Education, achieving commendable results.",
+  },
+  {
+    year: "2005",
+    title: "Infrastructure Expansion",
+    description:
+      "New classrooms and a library were constructed to accommodate the growing student population.",
+  },
+  {
+    year: "2012",
+    title: "ICT Integration",
+    description:
+      "The school introduced computer literacy programs to prepare students for the digital age.",
+  },
+  {
+    year: "2018",
+    title: "Sports Excellence",
+    description:
+      "Students represented Homabay County in national athletics and football competitions.",
+  },
+  {
+    year: "2024",
+    title: "Continued Growth",
+    description:
+      "Ondati Primary continues to excel in academics and community development under CBC curriculum.",
+  },
 ];
 
 const values = [
-  { icon: Target, title: "Excellence", description: "We strive for the highest standards in education and character development." },
-  { icon: Eye, title: "Integrity", description: "We uphold honesty, transparency, and accountability in all our endeavors." },
-  { icon: Heart, title: "Community", description: "We foster strong bonds between students, parents, teachers, and the wider community." },
+  {
+    icon: Target,
+    title: "Excellence",
+    description:
+      "We strive for the highest standards in education and character development.",
+  },
+  {
+    icon: Eye,
+    title: "Integrity",
+    description:
+      "We uphold honesty, transparency, and accountability in all our endeavors.",
+  },
+  {
+    icon: Heart,
+    title: "Community",
+    description:
+      "We foster strong bonds between students, parents, teachers, and the wider community.",
+  },
 ];
 
 const About = () => {
@@ -36,29 +81,37 @@ const About = () => {
               <div className="w-12 h-12 rounded-lg hero-gradient flex items-center justify-center mb-4">
                 <Target className="w-6 h-6 text-primary-foreground" />
               </div>
-              <h3 className="font-heading font-bold text-xl text-foreground mb-3">Our Mission</h3>
+              <h3 className="font-heading font-bold text-xl text-foreground mb-3">
+                Our Mission
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                To provide quality, inclusive education that nurtures the intellectual, moral, social,
-                and physical development of every learner, preparing them to become responsible and
-                productive citizens of Kenya and the world.
+                To provide quality, inclusive education that nurtures the
+                intellectual, moral, social, and physical development of every
+                learner, preparing them to become responsible and productive
+                citizens of Kenya and the world.
               </p>
             </div>
             <div className="bg-card rounded-lg p-8 border border-border shadow-sm">
               <div className="w-12 h-12 rounded-lg warm-gradient flex items-center justify-center mb-4">
                 <Eye className="w-6 h-6 text-primary-foreground" />
               </div>
-              <h3 className="font-heading font-bold text-xl text-foreground mb-3">Our Vision</h3>
+              <h3 className="font-heading font-bold text-xl text-foreground mb-3">
+                Our Vision
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                To be a centre of excellence in primary education, producing well-rounded individuals
-                who contribute positively to society and embrace lifelong learning.
+                To be a centre of excellence in primary education, producing
+                well-rounded individuals who contribute positively to society
+                and embrace lifelong learning.
               </p>
             </div>
           </div>
 
           <div className="text-center mb-8">
-            <p className="font-heading font-bold text-lg text-primary">School Motto</p>
+            <p className="font-heading font-bold text-lg text-primary">
+              School Motto
+            </p>
             <p className="font-heading font-extrabold text-2xl text-foreground mt-2">
-              "Education is the Key to Success"
+              "Strive for excellence"
             </p>
           </div>
         </div>
@@ -67,14 +120,23 @@ const About = () => {
       {/* Core Values */}
       <section className="section-alt py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <SectionHeading title="Our Core Values" subtitle="The principles that guide our school community every day." />
+          <SectionHeading
+            title="Our Core Values"
+            subtitle="The principles that guide our school community every day."
+          />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, i) => (
-              <div key={i} className="text-center opacity-0 animate-fade-in" style={{ animationDelay: `${i * 150}ms` }}>
+              <div
+                key={i}
+                className="text-center opacity-0 animate-fade-in"
+                style={{ animationDelay: `${i * 150}ms` }}
+              >
                 <div className="w-16 h-16 rounded-full hero-gradient flex items-center justify-center mx-auto mb-4">
                   <value.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="font-heading font-bold text-xl text-foreground mb-2">{value.title}</h3>
+                <h3 className="font-heading font-bold text-xl text-foreground mb-2">
+                  {value.title}
+                </h3>
                 <p className="text-muted-foreground">{value.description}</p>
               </div>
             ))}
@@ -85,7 +147,10 @@ const About = () => {
       {/* History Timeline */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <SectionHeading title="Our History" subtitle="A journey of growth, dedication, and academic excellence." />
+          <SectionHeading
+            title="Our History"
+            subtitle="A journey of growth, dedication, and academic excellence."
+          />
           <div className="max-w-3xl mx-auto">
             {timelineEvents.map((event, i) => (
               <div
@@ -102,8 +167,12 @@ const About = () => {
                   )}
                 </div>
                 <div className="pb-8">
-                  <h3 className="font-heading font-bold text-lg text-foreground">{event.title}</h3>
-                  <p className="text-muted-foreground mt-1">{event.description}</p>
+                  <h3 className="font-heading font-bold text-lg text-foreground">
+                    {event.title}
+                  </h3>
+                  <p className="text-muted-foreground mt-1">
+                    {event.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -114,11 +183,16 @@ const About = () => {
       {/* Location */}
       <section className="section-alt py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <SectionHeading title="Our Location" subtitle="Find us in the heart of Homabay County." />
+          <SectionHeading
+            title="Our Location"
+            subtitle="Find us in the heart of Homabay County."
+          />
           <div className="max-w-2xl mx-auto bg-card rounded-lg p-8 border border-border shadow-sm text-center">
             <MapPin className="w-10 h-10 text-primary mx-auto mb-4" />
             <div className="space-y-1 text-muted-foreground">
-              <p className="font-semibold text-foreground text-lg">Ondati Primary School</p>
+              <p className="font-semibold text-foreground text-lg">
+                Ondati Primary School
+              </p>
               <p>Ondati Village, Koguta Location</p>
               <p>Pala Ward, Ndhiwa Sub County</p>
               <p>Homabay County, Kenya</p>

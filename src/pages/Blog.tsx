@@ -13,37 +13,43 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     title: "Preparing for KCPE 2026: Tips for Parents and Students",
-    excerpt: "As the national examinations approach, here are practical strategies to help your child prepare effectively while maintaining a healthy balance.",
+    excerpt:
+      "As the national examinations approach, here are practical strategies to help your child prepare effectively while maintaining a healthy balance.",
     date: "January 28, 2026",
     category: "Academics",
   },
   {
     title: "Ondati Primary Shines at County Athletics Competition",
-    excerpt: "Our students represented the school with pride at the Homabay County athletics meet, bringing home multiple medals in track and field events.",
+    excerpt:
+      "Our students represented the school with pride at the Homabay County athletics meet, bringing home multiple medals in track and field events.",
     date: "January 15, 2026",
     category: "Sports",
   },
   {
     title: "CBC Implementation: What Parents Need to Know",
-    excerpt: "Understanding the Competency-Based Curriculum and how it benefits your child's holistic development at Ondati Primary School.",
+    excerpt:
+      "Understanding the Competency-Based Curriculum and how it benefits your child's holistic development at Ondati Primary School.",
     date: "December 10, 2025",
     category: "Education",
   },
   {
     title: "Tree Planting Day: Greening Our School Compound",
-    excerpt: "Students, teachers, and community members came together to plant over 200 indigenous trees in our school compound as part of environmental conservation efforts.",
+    excerpt:
+      "Students, teachers, and community members came together to plant over 200 indigenous trees in our school compound as part of environmental conservation efforts.",
     date: "November 25, 2025",
     category: "Environment",
   },
   {
     title: "Annual Science Fair Showcases Student Innovation",
-    excerpt: "From solar-powered water pumps to organic pest control solutions, our students demonstrated remarkable creativity at this year's science fair.",
+    excerpt:
+      "From solar-powered water pumps to organic pest control solutions, our students demonstrated remarkable creativity at this year's science fair.",
     date: "October 18, 2025",
     category: "Academics",
   },
   {
     title: "New Library Opens Its Doors to Students",
-    excerpt: "Thanks to generous community donations, our new library now houses over 2,000 books covering various subjects and reading levels.",
+    excerpt:
+      "Thanks to generous community donations, our new library now houses over 2,000 books covering various subjects and reading levels.",
     date: "September 5, 2025",
     category: "School News",
   },
@@ -77,7 +83,9 @@ const Blog = () => {
                 <div className="hero-gradient h-2" />
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className={`text-xs font-bold px-3 py-1 rounded-full ${categoryColors[post.category] || "bg-muted text-muted-foreground"}`}>
+                    <span
+                      className={`text-xs font-bold px-3 py-1 rounded-full ${categoryColors[post.category] || "bg-muted text-muted-foreground"}`}
+                    >
                       {post.category}
                     </span>
                     <div className="flex items-center gap-1 text-muted-foreground text-xs">

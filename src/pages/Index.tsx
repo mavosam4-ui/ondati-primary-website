@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Users, Calendar, ClipboardList, ArrowRight, Phone, MapPin } from "lucide-react";
+import {
+  BookOpen,
+  Users,
+  Calendar,
+  ClipboardList,
+  ArrowRight,
+  Phone,
+  MapPin,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import QuickLinkCard from "@/components/QuickLinkCard";
@@ -12,7 +20,8 @@ const quickLinks = [
   {
     icon: ClipboardList,
     title: "Admissions",
-    description: "Apply for enrollment and learn about our admission requirements.",
+    description:
+      "Apply for enrollment and learn about our admission requirements.",
     to: "/admissions",
   },
   {
@@ -24,7 +33,8 @@ const quickLinks = [
   {
     icon: Calendar,
     title: "Events",
-    description: "Stay updated with school events, activities, and important dates.",
+    description:
+      "Stay updated with school events, activities, and important dates.",
     to: "/events",
   },
   {
@@ -57,17 +67,38 @@ const Index = () => {
             <div className="inline-block px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold mb-6 animate-fade-in">
               🏫 Welcome to Ondati Primary School
             </div>
-            <h1 className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-card mb-6 leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
+            <h1
+              className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-card mb-6 leading-tight animate-fade-in"
+              style={{ animationDelay: "100ms" }}
+            >
               Nurturing <span className="text-secondary">Future</span> Leaders
             </h1>
-            <p className="text-card/80 text-lg md:text-xl mb-8 leading-relaxed animate-fade-in max-w-lg" style={{ animationDelay: "200ms" }}>
-              Providing quality education rooted in moral values and community spirit in the heart of Homabay County, Kenya.
+            <p
+              className="text-card/80 text-lg md:text-xl mb-8 leading-relaxed animate-fade-in max-w-lg"
+              style={{ animationDelay: "200ms" }}
+            >
+              Providing quality education rooted in moral values and community
+              spirit in the heart of Homabay County, Kenya.
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8">
-                <Link to="/admissions">Apply Now <ArrowRight className="ml-2 w-4 h-4" /></Link>
+            <div
+              className="flex flex-wrap gap-4 animate-fade-in"
+              style={{ animationDelay: "300ms" }}
+            >
+              <Button
+                asChild
+                size="lg"
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-base px-8"
+              >
+                <Link to="/admissions">
+                  Apply Now <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-card/30 text-card hover:bg-card/10 font-heading font-bold text-base px-8">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-card/30 text-card hover:bg-card/10 font-heading font-bold text-base px-8"
+              >
                 <Link to="/about">Learn More</Link>
               </Button>
             </div>
@@ -80,9 +111,17 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {highlights.map((stat, i) => (
-              <div key={i} className="opacity-0 animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
-                <div className="font-heading font-black text-3xl md:text-4xl text-secondary">{stat.number}</div>
-                <div className="text-primary-foreground/80 text-sm font-medium mt-1">{stat.label}</div>
+              <div
+                key={i}
+                className="opacity-0 animate-fade-in"
+                style={{ animationDelay: `${i * 100}ms` }}
+              >
+                <div className="font-heading font-black text-3xl md:text-4xl text-secondary">
+                  {stat.number}
+                </div>
+                <div className="text-primary-foreground/80 text-sm font-medium mt-1">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -109,18 +148,27 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <SectionHeading title="About Our School" subtitle="" centered={false} />
+              <SectionHeading
+                title="About Our School"
+                subtitle=""
+                centered={false}
+              />
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Ondati Primary School is located in the scenic Ondati Village, Koguta Location, Pala Ward,
-                Ndhiwa Sub County, Homabay County. For over three decades, we have been committed to
-                providing quality education that empowers learners to become responsible citizens.
+                Ondati Primary School is located in the scenic Ondati Village,
+                Koguta Location, Pala Ward, Ndhiwa Sub County, Homabay County.
+                For over three decades, we have been committed to providing
+                quality education that empowers learners to become responsible
+                citizens.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our mission is to nurture every child's potential through a balanced curriculum, dedicated
-                teaching, and strong community partnerships.
+                Our mission is to nurture every child's potential through a
+                balanced curriculum, dedicated teaching, and strong community
+                partnerships.
               </p>
               <Button asChild className="font-heading font-bold">
-                <Link to="/about">Read Our Story <ArrowRight className="ml-2 w-4 h-4" /></Link>
+                <Link to="/about">
+                  Read Our Story <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -157,12 +205,20 @@ const Index = () => {
               <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
-              <span className="font-medium">Ondati Village, Homabay County</span>
+              <span className="font-medium">
+                Ondati Village, Homabay County
+              </span>
             </div>
           </div>
           <div className="mt-8">
-            <Button asChild size="lg" className="font-heading font-bold text-base px-8">
-              <Link to="/contact">Contact Us <ArrowRight className="ml-2 w-4 h-4" /></Link>
+            <Button
+              asChild
+              size="lg"
+              className="font-heading font-bold text-base px-8"
+            >
+              <Link to="/contact">
+                Contact Us <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
             </Button>
           </div>
         </div>

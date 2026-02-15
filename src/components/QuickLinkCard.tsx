@@ -9,7 +9,13 @@ interface QuickLinkCardProps {
   delay?: number;
 }
 
-const QuickLinkCard = ({ icon: Icon, title, description, to, delay = 0 }: QuickLinkCardProps) => {
+const QuickLinkCard = ({
+  icon: Icon,
+  title,
+  description,
+  to,
+  delay = 0,
+}: QuickLinkCardProps) => {
   return (
     <Link
       to={to}
@@ -20,7 +26,9 @@ const QuickLinkCard = ({ icon: Icon, title, description, to, delay = 0 }: QuickL
         <Icon className="w-6 h-6 text-primary-foreground" />
       </div>
       <h3 className="font-heading font-bold text-foreground mb-2">{title}</h3>
-      <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
+      <p className="text-sm text-muted-foreground leading-relaxed">
+        {description}
+      </p>
     </Link>
   );
 };

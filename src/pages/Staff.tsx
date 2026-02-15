@@ -11,44 +11,52 @@ interface StaffMember {
 
 const staffMembers: StaffMember[] = [
   {
-    name: "Mr. James Ochieng",
+    name: "Md.Eucabeth Onono",
     role: "Head Teacher",
-    message: "Education is the most powerful tool we can use to change the world. Together, we are shaping the leaders of tomorrow.",
+    message:
+      "Education is the most powerful tool we can use to change the world. Together, we are shaping the leaders of tomorrow.",
   },
   {
-    name: "Mrs. Mary Akinyi",
+    name: "Mr.Nicanor Onjwang'",
     role: "Deputy Head Teacher",
-    message: "Every child has unique potential. Our mission is to discover and nurture that potential every single day.",
+    message:
+      "Every child has unique potential. Our mission is to discover and nurture that potential every single day.",
   },
   {
-    name: "Mr. Peter Otieno",
+    name: "Mr. Tonic Ongor",
     role: "Senior Teacher – Upper Primary",
-    message: "I believe in creating an engaging learning environment where students are excited to learn and grow.",
+    message:
+      "I believe in creating an engaging learning environment where students are excited to learn and grow.",
   },
   {
-    name: "Mrs. Grace Adhiambo",
+    name: "Mrs. Seline Ochieng",
     role: "Senior Teacher – Lower Primary",
-    message: "The early years are the most critical. I am dedicated to giving our youngest learners the best start possible.",
+    message:
+      "The early years are the most critical. I am dedicated to giving our youngest learners the best start possible.",
   },
   {
-    name: "Mr. David Omondi",
+    name: "Mr. Wickliff Ouma",
     role: "Mathematics & Science Teacher",
-    message: "Mathematics is the language of the universe. I strive to make it accessible and enjoyable for every student.",
+    message:
+      "Mathematics is the language of the universe. I strive to make it accessible and enjoyable for every student.",
   },
   {
-    name: "Mrs. Sarah Nyaboke",
+    name: "Mrs. Joyce Ouma",
     role: "Languages Teacher",
-    message: "Language is the foundation of all learning. Strong communication skills open doors to endless opportunities.",
+    message:
+      "Language is the foundation of all learning. Strong communication skills open doors to endless opportunities.",
   },
   {
-    name: "Mr. Samuel Okoth",
+    name: "Mrs.Salone Otieno",
     role: "Sports & Physical Education",
-    message: "A healthy body nurtures a healthy mind. Sports teach teamwork, discipline, and perseverance.",
+    message:
+      "A healthy body nurtures a healthy mind. Sports teach teamwork, discipline, and perseverance.",
   },
   {
-    name: "Mrs. Florence Anyango",
+    name: "Mrs. Mildren Ouma",
     role: "Creative Arts Teacher",
-    message: "Art allows children to express themselves freely. Every child is an artist in their own unique way.",
+    message:
+      "Art allows children to express themselves freely. Every child is an artist in their own unique way.",
   },
 ];
 
@@ -80,8 +88,12 @@ const Staff = () => {
                   </div>
                 </div>
                 <div className="p-5">
-                  <h3 className="font-heading font-bold text-foreground text-base">{member.name}</h3>
-                  <p className="text-secondary font-semibold text-sm mb-3">{member.role}</p>
+                  <h3 className="font-heading font-bold text-foreground text-base">
+                    {member.name}
+                  </h3>
+                  <p className="text-secondary font-semibold text-sm mb-3">
+                    {member.role}
+                  </p>
                   <p className="text-muted-foreground text-sm leading-relaxed italic">
                     "{member.message}"
                   </p>

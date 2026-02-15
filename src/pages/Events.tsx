@@ -18,15 +18,17 @@ const events: SchoolEvent[] = [
     date: "February 3, 2026",
     time: "7:30 AM",
     location: "School Assembly Ground",
-    description: "Welcome back students for the new academic year. Parents are encouraged to accompany new students.",
+    description:
+      "Welcome back students for the new academic year. Parents are encouraged to accompany new students.",
     type: "academic",
   },
   {
     title: "Parents' Day & Academic Workshop",
     date: "March 14, 2026",
     time: "9:00 AM – 1:00 PM",
-    location: "School Hall",
-    description: "Engage with teachers, review student progress, and participate in workshops on supporting learning at home.",
+    location: "School Main Forest",
+    description:
+      "Engage with teachers, review student progress, and participate in workshops on supporting learning at home.",
     type: "academic",
   },
   {
@@ -34,7 +36,8 @@ const events: SchoolEvent[] = [
     date: "March 28, 2026",
     time: "8:00 AM – 4:00 PM",
     location: "School Playground",
-    description: "Annual inter-class competition featuring athletics, football, netball, and volleyball. All students participate.",
+    description:
+      "Annual inter-class competition featuring athletics, football, netball, and volleyball. All students participate.",
     type: "sports",
   },
   {
@@ -42,7 +45,8 @@ const events: SchoolEvent[] = [
     date: "April 11, 2026",
     time: "9:00 AM – 2:00 PM",
     location: "School Assembly Ground",
-    description: "A celebration of Kenyan cultural diversity with traditional dances, songs, food, and storytelling.",
+    description:
+      "A celebration of Kenyan cultural diversity with traditional dances, songs, food, and storytelling.",
     type: "cultural",
   },
   {
@@ -50,7 +54,8 @@ const events: SchoolEvent[] = [
     date: "May 9, 2026",
     time: "10:00 AM – 3:00 PM",
     location: "School Classrooms",
-    description: "Students showcase their science projects and innovations. Open to parents and community members.",
+    description:
+      "Students showcase their science projects and innovations. Open to parents and community members.",
     type: "academic",
   },
   {
@@ -58,7 +63,8 @@ const events: SchoolEvent[] = [
     date: "June 5, 2026",
     time: "8:00 AM – 12:00 PM",
     location: "School Compound & Surroundings",
-    description: "Join us for World Environment Day activities. Bring your own gardening tools if possible.",
+    description:
+      "Join us for World Environment Day activities. Bring your own gardening tools if possible.",
     type: "community",
   },
 ];
@@ -102,16 +108,24 @@ const Events = () => {
                 <div className="flex flex-col md:flex-row">
                   <div className="hero-gradient p-6 md:w-40 flex flex-col items-center justify-center text-center shrink-0">
                     <Calendar className="w-6 h-6 text-primary-foreground mb-2" />
-                    <span className="text-primary-foreground font-heading font-bold text-sm">{event.date}</span>
+                    <span className="text-primary-foreground font-heading font-bold text-sm">
+                      {event.date}
+                    </span>
                   </div>
                   <div className="p-6 flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
-                      <h3 className="font-heading font-bold text-lg text-foreground">{event.title}</h3>
-                      <span className={`text-xs font-bold px-3 py-1 rounded-full ${typeStyles[event.type]}`}>
+                      <h3 className="font-heading font-bold text-lg text-foreground">
+                        {event.title}
+                      </h3>
+                      <span
+                        className={`text-xs font-bold px-3 py-1 rounded-full ${typeStyles[event.type]}`}
+                      >
                         {typeLabels[event.type]}
                       </span>
                     </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">{event.description}</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                      {event.description}
+                    </p>
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                       <span className="flex items-center gap-1">
                         <Clock className="w-4 h-4" /> {event.time}
