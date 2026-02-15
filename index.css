@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 150 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 25% 12%;
+
+    --primary: 145 55% 32%;
+    --primary-foreground: 40 33% 97%;
+
+    --secondary: 38 90% 52%;
+    --secondary-foreground: 150 25% 12%;
+
+    --muted: 40 20% 92%;
+    --muted-foreground: 150 10% 45%;
+
+    --accent: 200 75% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 145 55% 32%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 145 30% 15%;
+    --sidebar-foreground: 40 33% 97%;
+    --sidebar-primary: 38 90% 52%;
+    --sidebar-primary-foreground: 150 25% 12%;
+    --sidebar-accent: 145 30% 22%;
+    --sidebar-accent-foreground: 40 33% 97%;
+    --sidebar-border: 145 20% 25%;
+    --sidebar-ring: 38 90% 52%;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(145 55% 32%), hsl(145 45% 22%));
+    --warm-gradient: linear-gradient(135deg, hsl(38 90% 52%), hsl(25 85% 48%));
+    --section-alt: 40 25% 95%;
+    --earth: 25 40% 35%;
+    --earth-foreground: 40 33% 97%;
+    --kenya-red: 0 72% 45%;
+    --kenya-red-foreground: 0 0% 100%;
+
+    --font-heading: 'Nunito', sans-serif;
+    --font-body: 'Source Sans 3', sans-serif;
+  }
+
+  .dark {
+    --background: 150 20% 8%;
+    --foreground: 40 33% 95%;
+    --card: 150 20% 11%;
+    --card-foreground: 40 33% 95%;
+    --popover: 150 20% 11%;
+    --popover-foreground: 40 33% 95%;
+    --primary: 145 55% 42%;
+    --primary-foreground: 150 25% 8%;
+    --secondary: 38 80% 50%;
+    --secondary-foreground: 150 25% 8%;
+    --muted: 150 15% 18%;
+    --muted-foreground: 40 15% 60%;
+    --accent: 200 65% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 150 15% 20%;
+    --input: 150 15% 20%;
+    --ring: 145 55% 42%;
+    --sidebar-background: 150 20% 6%;
+    --sidebar-foreground: 40 33% 95%;
+    --sidebar-primary: 38 80% 50%;
+    --sidebar-primary-foreground: 150 25% 8%;
+    --sidebar-accent: 150 15% 14%;
+    --sidebar-accent-foreground: 40 33% 95%;
+    --sidebar-border: 150 15% 14%;
+    --sidebar-ring: 38 80% 50%;
+    --section-alt: 150 15% 10%;
+    --earth: 25 35% 50%;
+    --earth-foreground: 40 33% 97%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .warm-gradient {
+    background: var(--warm-gradient);
+  }
+
+  .section-alt {
+    background-color: hsl(var(--section-alt));
+  }
+}
